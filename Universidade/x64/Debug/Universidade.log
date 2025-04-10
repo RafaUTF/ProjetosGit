@@ -1,0 +1,3 @@
+﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(1126,5): warning MSB4211: a propriedade "GetTargetPathDependsOn" está sendo definida para um valor pela primeira vez, mas já foi consumida em "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets (2243,5)".
+  Universidade.cpp
+  Universidade.vcxproj -> C:\Users\Vaio\Desktop\Simao\Slides3\Versao3G\x64\Debug\Universidade.exe
