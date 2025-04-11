@@ -1,2 +1,10 @@
-﻿  Disciplina.cpp
+﻿  Aluno.cpp
+  Departamento.cpp
+  Disciplina.cpp
+  ElAluno.cpp
+  Principal.cpp
+  Professor.cpp
+  Universidade.cpp
+  main.cpp
+  Gerando Código...
   Universidade.vcxproj -> C:\Users\Vaio\Desktop\Simao\Universidade\x64\Debug\Universidade.exe

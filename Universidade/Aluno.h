@@ -8,8 +8,8 @@ private:
 	Universidade* pUniv;
 	int RA;
 
-	Aluno* pAnte;
-	Aluno* pProx;
+	//Aluno* pAnte;
+	//Aluno* pProx;
 
 	Disciplina* pDisc;
 
@@ -21,10 +21,10 @@ public:
 	void setRA(int ra);
 	void ondeEstudo();
 
-	void setpAnte(Aluno* pa);
-	Aluno* getpAnte();
-	void setpProx(Aluno* pp);
-	Aluno* getpProx();
+	//void setpAnte(Aluno* pa);
+	//Aluno* getpAnte();
+	//void setpProx(Aluno* pp);
+	//Aluno* getpProx();
 
 	void setDisc(Disciplina* pd);
 	Disciplina* getDisc();

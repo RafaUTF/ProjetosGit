@@ -3,12 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\Vaio\\Desktop\\Simao\\Universidade\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{307F0DF0-A449-45A8-9C7B-309C0D552FA7}|Universidade.vcxproj|C:\\Users\\Vaio\\Desktop\\Simao\\Universidade\\Disciplina.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{307F0DF0-A449-45A8-9C7B-309C0D552FA7}|Universidade.vcxproj|solutionrelative:Disciplina.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{307F0DF0-A449-45A8-9C7B-309C0D552FA7}|Universidade.vcxproj|C:\\Users\\Vaio\\Desktop\\Simao\\Universidade\\Disciplina.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{307F0DF0-A449-45A8-9C7B-309C0D552FA7}|Universidade.vcxproj|solutionrelative:Disciplina.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{307F0DF0-A449-45A8-9C7B-309C0D552FA7}|Universidade.vcxproj|C:\\Users\\Vaio\\Desktop\\Simao\\Universidade\\ElDisciplina.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{307F0DF0-A449-45A8-9C7B-309C0D552FA7}|Universidade.vcxproj|solutionrelative:ElDisciplina.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{307F0DF0-A449-45A8-9C7B-309C0D552FA7}|Universidade.vcxproj|C:\\Users\\Vaio\\Desktop\\Simao\\Universidade\\Principal.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -21,6 +17,22 @@
     {
       "AbsoluteMoniker": "D:0:0:{307F0DF0-A449-45A8-9C7B-309C0D552FA7}|Universidade.vcxproj|C:\\Users\\Vaio\\Desktop\\Simao\\Universidade\\Aluno.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{307F0DF0-A449-45A8-9C7B-309C0D552FA7}|Universidade.vcxproj|solutionrelative:Aluno.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{307F0DF0-A449-45A8-9C7B-309C0D552FA7}|Universidade.vcxproj|C:\\Users\\Vaio\\Desktop\\Simao\\Universidade\\Disciplina.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{307F0DF0-A449-45A8-9C7B-309C0D552FA7}|Universidade.vcxproj|solutionrelative:Disciplina.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{307F0DF0-A449-45A8-9C7B-309C0D552FA7}|Universidade.vcxproj|C:\\Users\\Vaio\\Desktop\\Simao\\Universidade\\Disciplina.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{307F0DF0-A449-45A8-9C7B-309C0D552FA7}|Universidade.vcxproj|solutionrelative:Disciplina.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{307F0DF0-A449-45A8-9C7B-309C0D552FA7}|Universidade.vcxproj|C:\\Users\\Vaio\\Desktop\\Simao\\Universidade\\ElAluno.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{307F0DF0-A449-45A8-9C7B-309C0D552FA7}|Universidade.vcxproj|solutionrelative:ElAluno.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{307F0DF0-A449-45A8-9C7B-309C0D552FA7}|Universidade.vcxproj|C:\\Users\\Vaio\\Desktop\\Simao\\Universidade\\ElAluno.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{307F0DF0-A449-45A8-9C7B-309C0D552FA7}|Universidade.vcxproj|solutionrelative:ElAluno.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,24 +42,60 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Principal.cpp",
-              "DocumentMoniker": "C:\\Users\\Vaio\\Desktop\\Simao\\Universidade\\Principal.cpp",
-              "RelativeDocumentMoniker": "Principal.cpp",
-              "ToolTip": "C:\\Users\\Vaio\\Desktop\\Simao\\Universidade\\Principal.cpp",
-              "RelativeToolTip": "Principal.cpp",
-              "ViewState": "AgIAAC8AAAAAAAAAAAAYwD4AAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-04-10T00:34:44.468Z",
+              "DocumentIndex": 0,
+              "Title": "ElDisciplina.h",
+              "DocumentMoniker": "C:\\Users\\Vaio\\Desktop\\Simao\\Universidade\\ElDisciplina.h",
+              "RelativeDocumentMoniker": "ElDisciplina.h",
+              "ToolTip": "C:\\Users\\Vaio\\Desktop\\Simao\\Universidade\\ElDisciplina.h",
+              "RelativeToolTip": "ElDisciplina.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-04-10T22:21:15.172Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "Principal.cpp",
+              "DocumentMoniker": "C:\\Users\\Vaio\\Desktop\\Simao\\Universidade\\Principal.cpp",
+              "RelativeDocumentMoniker": "Principal.cpp",
+              "ToolTip": "C:\\Users\\Vaio\\Desktop\\Simao\\Universidade\\Principal.cpp",
+              "RelativeToolTip": "Principal.cpp",
+              "ViewState": "AgIAAJMAAAAAAAAAAAAAAEAAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-04-10T22:09:43.531Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ElAluno.cpp",
+              "DocumentMoniker": "C:\\Users\\Vaio\\Desktop\\Simao\\Universidade\\ElAluno.cpp",
+              "RelativeDocumentMoniker": "ElAluno.cpp",
+              "ToolTip": "C:\\Users\\Vaio\\Desktop\\Simao\\Universidade\\ElAluno.cpp",
+              "RelativeToolTip": "ElAluno.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-04-10T15:11:12.283Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ElAluno.h",
+              "DocumentMoniker": "C:\\Users\\Vaio\\Desktop\\Simao\\Universidade\\ElAluno.h",
+              "RelativeDocumentMoniker": "ElAluno.h",
+              "ToolTip": "C:\\Users\\Vaio\\Desktop\\Simao\\Universidade\\ElAluno.h",
+              "RelativeToolTip": "ElAluno.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-04-10T15:08:35.431Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "Disciplina.h",
               "DocumentMoniker": "C:\\Users\\Vaio\\Desktop\\Simao\\Universidade\\Disciplina.h",
               "RelativeDocumentMoniker": "Disciplina.h",
@@ -55,47 +103,43 @@
               "RelativeToolTip": "Disciplina.h",
               "ViewState": "AgIAAB4AAAAAAAAAAAAAAC0AAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-04-09T20:05:07.953Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-09T20:05:07.953Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "Disciplina.cpp",
               "DocumentMoniker": "C:\\Users\\Vaio\\Desktop\\Simao\\Universidade\\Disciplina.cpp",
               "RelativeDocumentMoniker": "Disciplina.cpp",
               "ToolTip": "C:\\Users\\Vaio\\Desktop\\Simao\\Universidade\\Disciplina.cpp",
               "RelativeToolTip": "Disciplina.cpp",
-              "ViewState": "AgIAAGsAAAAAAAAAAAAgwH0AAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAK4AAAAAAAAAAAAnwL0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-04-09T20:05:03.265Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-09T20:05:03.265Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "Aluno.h",
               "DocumentMoniker": "C:\\Users\\Vaio\\Desktop\\Simao\\Universidade\\Aluno.h",
               "RelativeDocumentMoniker": "Aluno.h",
               "ToolTip": "C:\\Users\\Vaio\\Desktop\\Simao\\Universidade\\Aluno.h",
               "RelativeToolTip": "Aluno.h",
-              "ViewState": "AgIAABIAAAAAAAAAAAAAAB0AAAAXAAAAAAAAAA==",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABoAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-04-09T20:04:46.874Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-09T20:04:46.874Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "Aluno.cpp",
               "DocumentMoniker": "C:\\Users\\Vaio\\Desktop\\Simao\\Universidade\\Aluno.cpp",
               "RelativeDocumentMoniker": "Aluno.cpp",
               "ToolTip": "C:\\Users\\Vaio\\Desktop\\Simao\\Universidade\\Aluno.cpp",
               "RelativeToolTip": "Aluno.cpp",
-              "ViewState": "AgIAAEAAAAAAAAAAAAAYwD8AAAACAAAAAAAAAA==",
+              "ViewState": "AgIAACQAAAAAAAAAAAAAAEEAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-04-09T19:59:21.85Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-09T19:59:21.85Z"
             }
           ]
         }

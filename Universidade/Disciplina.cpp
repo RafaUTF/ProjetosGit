@@ -1,6 +1,8 @@
 #include "Disciplina.h"
-#include "Aluno.h"//
+#include "ElAluno.h"//
 #include "Departamento.h"
+//#include "Aluno.h"//
+
 //#include "Universidade.h"
 
 Disciplina::Disciplina(const char* n, const char* a,int p, int na){
@@ -42,14 +44,7 @@ void Disciplina::setArea(const char* a) {
 char* Disciplina::getArea() {
 	return areaConhecimento;
 }
-/*
-void Disciplina::setDep(Departamento* pd) {
-	if (pDepD != pd) {
-		pDepD = pd;
-		pDepD->novaDisc(this);
-	}
-}
-*/
+
 void Disciplina::setDep(Departamento* pd) {
 	if (pDepD != pd) {
 		pDepD = pd;
@@ -58,23 +53,17 @@ void Disciplina::setDep(Departamento* pd) {
 	}
 }
 
-Departamento* Disciplina::getDep() {
-	return pDepD;
-}
+Departamento* Disciplina::getDep() {return pDepD;}
 //
 Disciplina* Disciplina::getpAnte() { return pAnte; }
 Disciplina* Disciplina::getpProx() { return pProx; }
 
-void Disciplina::setpAnte(Disciplina* pa) {
-	pAnte = pa;
-}
-void Disciplina::setpProx(Disciplina* pp) {
-	pProx = pp;
-}
+void Disciplina::setpAnte(Disciplina* pa) {pAnte = pa;}
+void Disciplina::setpProx(Disciplina* pp) {pProx = pp;}
 void Disciplina::setPeriodo(const int p) { periodo = p; }
 int Disciplina::getPeriodo() { return periodo; }
 
-
+/*
 void Disciplina::listaAlunos() {
 	cout << "Os " << iAlunos << " de " << nAlunos << " alunos de " << nome << ":" << endl;
 	for (Aluno* px = pInicio;px != NULL;px = px->getpProx())
@@ -85,7 +74,8 @@ void Disciplina::listaAlunos2() {
 	for (Aluno* px = pAtual;px != NULL;px = px->getpAnte())
 		cout << px->getNome() << endl;
 }
-
+*/
+/*
 void Disciplina::novoAluno(Aluno* pa) {
 	int ja_ta = 0;
 	Aluno* px;
@@ -124,55 +114,9 @@ void Disciplina::novoAluno(Aluno* pa) {
 		pa->setDisc(NULL);
 	}
 }
-/*
-void Disciplina::novoAluno(Aluno* pa) {
-	int ja_ta = 0;
-	Aluno* px;
-	for (px = pInicio;px != NULL && ja_ta == 0;px = px->getpProx())
-		if (px == pa)
-			ja_ta = 1;
-	if (!ja_ta) {
-		if (pInicio == NULL) {//1a materia
-			pInicio = pa;
-			pAtual = pa;
-		}
-		else {//mais uma materia
-			for (px = pInicio;px->getpProx() != NULL && a_maior_b(pa,px);px = px->getpProx());
-			if (px->getpProx() == NULL && !a_maior_b(pa, px)) {//ultima posicao perfeito
-				px->setpProx(pa);
-				pa->setpAnte(px);
-				pAtual = pa;
-			}
-			else {// if (pd->getPeriodo() < px->getPeriodo()) {//meio ou inicio
-				if (px->getpAnte() != NULL) {
-					pa->setpAnte(px->getpAnte());
-					px->getpAnte()->setpProx(pa);
-				}
-				else//px->getpAnte() == NULL
-					pInicio = pa;
-				pa->setpProx(px);
-				px->setpAnte(pa);
-			}
-		}
-		//pa->setDisc(this);
-	}
-}
 */
 
-int Disciplina::a_maior_b(Aluno* a, Aluno* b) {
-	int i;
-	for (i = 0;a->getNome()[i] != '\0' && b->getNome()[i] != '\0';i++) {
-		if (a->getNome()[i] > b->getNome()[i])
-			return 1;
-		else if (a->getNome()[i] < b->getNome()[i])
-			return 0;
-	}
-	if (a->getNome()[i] != '\0')//se o a for maior
-		return 1;
-	//else if (b->getNome()[i] != '\0')
-	return 0;
-}
-
+/*
 void Disciplina::matriculado(Aluno* pa) {
 	if (pa->getDisc() == this)
 		cout << "O aluno " << pa->getNome()
@@ -180,8 +124,73 @@ void Disciplina::matriculado(Aluno* pa) {
 	else
 		cout << "O aluno " << pa->getNome()
 		<< " NAO esta matriculado na disciplina " << nome << endl;
+}*/
+
+
+int Disciplina::matriculado(Aluno* pa) {
+	for (ElAluno* pex = pInicio;pex != NULL;pex = pex->getpProx())
+		if (pex->getAluno() == pa)
+			return 1;
+	return 0;
+
 }
 
+void Disciplina::novoAluno(Aluno* pa) {
+	if (!matriculado(pa)) {
+		if (iAlunos < nAlunos) {
+			iAlunos++;
+			ElAluno* pex = new ElAluno;
+			pex->setAluno(pa);
+			if (pInicio == NULL) {//1a materia
+				pInicio = pex;
+				pAtual = pex;
+			}
+			else {//mais uma materia
+				ElAluno* px;
+				for (px = pInicio;px->getpProx() != NULL && pa->getNome()[0] > px->getAluno()->getNome()[0];px = px->getpProx());
+				if (px->getpProx() == NULL && pa->getNome()[0] >= px->getAluno()->getNome()[0]) {//ultima posicao perfeito
+					px->setpProx(pex);
+					pex->setpAnte(px);
+					pAtual = pex;
+				}
+				else {// if (pd->getPeriodo() < px->getPeriodo()) {//meio ou inicio
+					if (px->getpAnte() != NULL) {
+						pex->setpAnte(px->getpAnte());
+						px->getpAnte()->setpProx(pex);
+					}
+					else//px->getpAnte() == NULL
+						pInicio = pex;
+					pex->setpProx(px);
+					px->setpAnte(pex);
+				}
+				pex->getAluno()->setDisc(this);
+			}
+		}
+		else if (iAlunos == nAlunos)
+			cout << "O aluno " << pa->getNome() << " nao conseguiu vaga em  " << nome << endl;
+	}
+}
+//pAtual->setpProx(pex);
+//pex->setpAnte(pAtual);
+//pAtual = pex;
+
+
+
+void Disciplina::listaAlunos() {
+	cout << "Os " << iAlunos << " de " << nAlunos << " alunos de " << nome << ":" << endl;
+	for (ElAluno* pex = pInicio;pex != NULL;pex = pex->getpProx())
+		cout << pex->getAluno()->getNome() << endl;
+}
+void Disciplina::listaAlunos2(){
+	cout << "Os " << iAlunos << " de " << nAlunos << " alunos de " << nome << ":" << endl;
+	for (ElAluno* pex = pAtual;pex != NULL;pex = pex->getpAnte())
+		cout << pex->getAluno()->getNome() << endl;
+}
+void Disciplina::retiraAluno(Aluno* pa) {
+
+}
+
+/*
 void Disciplina::retiraAluno(Aluno* pa) {
 	if (pa->getDisc()!=this)
 		cout << "O aluno " << pa->getNome()
@@ -210,6 +219,5 @@ void Disciplina::retiraAluno(Aluno* pa) {
 			pa->setpProx(NULL);
 		}
 	}
-
-
 }
+*/

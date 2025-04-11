@@ -2,6 +2,7 @@
 #include "stdafx.h"
 class Departamento;
 //class Universidade;
+class ElAluno;
 class Aluno;
 
 class Disciplina
@@ -16,8 +17,8 @@ private:
 	Disciplina* pAnte;
 	Disciplina* pProx;
 
-	Aluno* pInicio;
-	Aluno* pAtual;
+	ElAluno* pInicio;
+	ElAluno* pAtual;
 public:
 	
 
@@ -43,11 +44,11 @@ public:
 	//metodos alunos
 	void novoAluno(Aluno* pa);
 	void retiraAluno(Aluno* pa);
-	void matriculado(Aluno* pa);
+	//void matriculado(Aluno* pa);
+	int matriculado(Aluno* pa);
 	void listaAlunos();
 	void listaAlunos2();
 
-	int a_maior_b(Aluno* a, Aluno* b);
 
 };
 

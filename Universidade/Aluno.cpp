@@ -7,8 +7,8 @@ Aluno::Aluno(int nasc, const char* n):
 	pUniv = NULL;
 	RA = -1;
 
-	pAnte = NULL;
-	pProx = NULL;
+	//pAnte = NULL;
+	//pProx = NULL;
 	pDisc = NULL;
 }
 Aluno::Aluno():
@@ -17,8 +17,8 @@ Aluno::Aluno():
 	pUniv = NULL;
 	RA = -1;
 
-	pAnte = NULL;
-	pProx = NULL;
+	//pAnte = NULL;
+	//pProx = NULL;
 	pDisc = NULL;
 }
 Aluno::~Aluno(){
@@ -27,8 +27,8 @@ Aluno::~Aluno(){
 	<< pUniv->getNome() << ", tinha o RA:  " << RA << endl;
 
 	pUniv = NULL;
-	pAnte = NULL;
-	pProx = NULL;
+	//pAnte = NULL;
+	//pProx = NULL;
 }
 void Aluno::setUniv(Universidade* pu){
 	pUniv = pu;
@@ -46,16 +46,10 @@ void Aluno::ondeEstudo(){
 		cout << nome << " eh um vagabundo e nao estuda " << endl;
 }
 
-void Aluno::setpAnte(Aluno* pa) {
-	pAnte = pa;
-}
-void Aluno::setpProx(Aluno* pp) {
-	pProx = pp;
-}
-
-Aluno* Aluno::getpAnte() { return pAnte; }
-
-Aluno* Aluno::getpProx() { return pProx; }
+//void Aluno::setpAnte(Aluno* pa) {pAnte = pa;}
+//void Aluno::setpProx(Aluno* pp) {pProx = pp;}
+//Aluno* Aluno::getpAnte() { return pAnte; }
+//Aluno* Aluno::getpProx() { return pProx; }
 /*
 void Aluno::setDisc(Disciplina* pd) { 
 	if (pDisc == NULL) {
@@ -67,9 +61,13 @@ void Aluno::setDisc(Disciplina* pd) {
 }*/
 void Aluno::setDisc(Disciplina* pd) {
 	if (pDisc != pd) {
-		pDisc = pd;
-		if (pDisc != NULL)
-			pDisc->novoAluno(this);
+		if (pd == NULL)
+			pDisc->retiraAluno(this);
+		else {// pd != NULL
+			pd->novoAluno(this);
+			if(pd->matriculado(this))
+				pDisc = pd;
+		}
 	}
 }
 

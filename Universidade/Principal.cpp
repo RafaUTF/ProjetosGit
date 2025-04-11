@@ -57,12 +57,12 @@ void Principal::inicializaAlunos() {
 	Arthur.inicializa(2006, "Arthur Herbele");
 	Deborah.inicializa(2006, "Deborah Feijo");
 	
-	fis1.novoAluno(&Carlos);
 	Rafa.setDisc(&fis1);
+	fis1.novoAluno(&Carlos);
+	Deborah.setDisc(&fis1);
 	fis1.novoAluno(&Deborah);
 	fis1.novoAluno(&Arthur);
 	Deborah.setDisc(&fis1);
-	Rafa.setDisc(&fis1);
 	Luiz.setDisc(&fis1);
 	fis1.novoAluno(&Luiz);
 }
@@ -152,12 +152,14 @@ void Principal::listaDisc() {
 }
 
 void Principal::listaAlunos() {
-	fis1.matriculado(&Rafa);
-	fis1.matriculado(&Luiz);
+	
+	//fis1.matriculado(&Luiz);
+	cout << endl << fis1.matriculado(&Rafa) << endl;
+	cout << endl << fis1.matriculado(&Luiz) << endl;
 
 	fis1.listaAlunos();
-	fis1.retiraAluno(&Luiz);
-	fis1.retiraAluno(&Rafa);
+	//fis1.retiraAluno(&Luiz);
+	//fis1.retiraAluno(&Rafa);
 
-	fis1.listaAlunos();
+	fis1.listaAlunos2();
 }
